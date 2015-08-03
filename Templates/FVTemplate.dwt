@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Page title</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles_main_old.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<script></script>
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div id="main-wrapper">
+	<div id="left-col">
+    	<div id="logo"><img src="images/fv_logo.png" width="100%" height="auto" /></div>
+        
+        <div id="menu-bar">
+        	<ul>
+            	<li><a href="home.html" class="active">Home</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="photography.html" >Photography</a></li>
+                <li><a href="video.html">Packages</a></li>
+                <li><a href="contact.html">Contact</a></li>            
+            </ul>
+        </div>
+        
+       
+        	<!--
+            <div id="social-media-wrapper">
+            <ul>
+            <li> <a  href="#"><i class="fa fa-facebook"></i></a></li>
+              <li> <a  href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li> <a  href="#"><i class="fa fa-youtube"></i></a></li>
+                <li> <a  href="#"><i class="fa fa-vimeo-square"></i></a></li>
+            </ul>
+            </div> -->
+            
+          
+     
+        
+    
+    </div>
+    <div id="right-col">
+    	<div id="page-content-area">
+		<!-- TemplateBeginEditable name="page content area" -->
+        page content area
+		<!-- TemplateEndEditable -->
+            
+        </div>
+    
+    </div>
+<div id="footer">
+<a class="powered-by" href="">Powered by</a>
+<div id="social-media-wrapper">
+            <ul>
+            <li> <a  href="#"><i class="fa fa-facebook"></i></a></li>
+              <li> <a  href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li> <a  href="#"><i class="fa fa-youtube"></i></a></li>
+                <li> <a  href="#"><i class="fa fa-vimeo-square"></i></a></li>
+            </ul>
+            </div> 
+        
+
+
+</div>    
+
+</div>
+
+</body>
+</html>
