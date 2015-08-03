@@ -414,6 +414,87 @@ p{	font-size: 13px;
 	background:#39F;
 	}
 	
+/*=================== CONTACT ===============================*/
+
+#contact-page{
+	padding:20px;
+	width:100%;
+	max-width:1024px;
+	min-width:300px;
+	}
+#contact-map{
+	display:block;
+	margin:20px 0px;
+	border:1px solid #CCC;
+	padding:2px;
+	}
+	
+#local-contact{
+	display:block;
+	margin:20px 0px;
+	width:100%;
+	max-width:480px;
+	min-width:300px;
+	
+	}
+	
+.contact-table{
+	display:table;
+	}
+.contact-row{
+	display:table-row;
+	}
+.contact-cell{
+	display:table-cell;
+	border-collapse:collapse;
+	padding:7px;
+	line-height:25px;
+	font-weight:300;
+	font-size:20px;
+	
+	}	
+	
+	
+#contact-message-form{
+	margin:20px 0px;
+	padding:2px;	
+	}
+#contact-message-form .contact-form{
+	display:block;
+	width:100%;
+	max-width:440px;
+	min-width:300px;
+	padding:20px;
+	border:1px solid #E8E8E8;
+	}
+.contact-form label{
+	display:block;
+	padding:15px 0px 8px 0px;
+	width:95%;
+	}
+.contact-form input, .contact-form textarea{
+	width:95%;
+	padding:8px;
+	border:1px solid #CCC;
+	background:#FFF;
+	transition:border-color .5s, color .5s;	
+	}
+.contact-form textarea{
+	height:200px;
+	}
+.contact-form input:focus, .contact-form textarea:focus{
+	border-color:#333;
+	color:#000;
+	}		
+	
+#submit-button{
+	margin:20px auto;
+	width:150px;
+	text-align:center;
+	text-transform:uppercase;
+	}							
+	
+	
 /*================= FOOTER ===================================*/
 #footer{
 	position:relative;
