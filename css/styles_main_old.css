@@ -1,0 +1,606 @@
+@import url(reset.css);
+/*--------------Font Import-----------------*/
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+/*--------------My css-----------------*/
+body,html{
+	font-family: 'Oswald',Helvetica, Arial, sans-serif;
+	/*font-family: Helvetica, Arial, sans-serif;*/
+	word-wrap: break-word;
+	color:#666;
+	height:100%;
+	width:100%;
+
+	}
+/*---------------fonts--------------*/
+h1{font-size: 35px;
+	font-weight:400;
+	}
+h2{
+	font-size: 25px;
+	font-weight:400;
+	}
+h3{font-size: 20px;
+	font-weight:400;
+	}		
+p{	font-size: 13px;
+	font-weight:300;
+	line-height:20px;
+	
+	}
+
+#main-wrapper{
+	width:100%;
+	height:100%;	
+	
+	}
+/*Main Coloumns left & right*/	
+#left-col{
+	display:block;	
+	width:15%;
+	float:left;
+	background:#FFF;
+	height:100%;
+	
+	
+	}
+#right-col{
+	background:#f6f6f6;
+	width:85%;
+	float:right;
+	
+	}
+/*left coloumn elements*/		
+#logo{
+	display:block;
+	width:95%;
+	max-width:140px;
+	max-height:140px;
+	margin:20px 10% ;	
+	overflow:hidden;	
+	}
+		
+#menu-bar{
+	width:80%;
+	display:block;
+	margin:10px auto;
+	text-align:left;
+	}
+#menu-bar ul{
+	display:block;
+	width:100%;
+	list-style: outside none none;
+	font-size: 13px;
+	text-transform: uppercase;
+	}
+#menu-bar ul li{
+	position: relative;
+	margin: 0px;
+	border-bottom:1px dashed #CCC;
+	}
+#menu-bar>ul>li>a{
+	color: #999;
+    text-decoration: none;
+    font-weight: normal;
+    line-height: 22px;
+    padding: 12px 40px 12px 0px;
+    display: block;
+	transition:ease-out .3s color;
+}
+#menu-bar>ul>li>a:hover{
+	color:#000;
+	}
+#menu-bar li>a.active{
+	color:#000;
+	font-weight:bold;
+	}
+		
+/*right coloumn elements*/					
+
+#page-content-area{
+	width:100%;
+	}
+#page-content-area h1{
+	line-height:60px;
+	}
+#page-content-area p{
+	font-family:Geneva, sans-serif;
+	}		
+/*Slider*/	
+#main-slider{
+	display:block;
+	height:auto;
+	overflow:hidden;
+	}
+
+#main-slider .bx-controls{
+	display:none;
+	}
+#main-slider .bx-wrapper{
+	margin-bottom:0px;	
+	}
+#vision_mission_wrapper{
+	padding:20px;
+	margin:30px;
+	max-width:80%;
+	
+	
+	}	
+		
+
+/* Gallery page*/
+#gallery-menu{
+	display:inline-block;
+	width:100%;
+	padding:10px 0px;
+	background:#000;
+	font-size:11px;
+	text-transform:uppercase;
+	
+	}
+#gallery-menu ul{
+	display:inline-block;
+	margin-left:15px;
+	}
+#gallery-menu ul li{
+	display:inline;
+	margin-right:5px;
+	float:left;
+	}
+#gallery-menu ul li button{
+	padding:7px;
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;
+	border:1px solid #000;
+	border-color:transparent;
+	background:none;	
+	}
+	
+#gallery-menu ul li button:hover{
+	border:1px solid #333 ;
+	background:#333;
+	}	
+	
+#gallery-menu ul li button.active{
+	border:1px solid #666 ;
+	cursor:default;	
+	}
+#gallery-menu ul li button.active:hover{
+	order:1px solid #666 ;
+	background:none;
+	}
+#small-image-box{
+	width:100%;	
+	padding:0px;
+	margin:0px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap; 	
+	}	
+#small-image-box .small-image{
+	display:inline-block;
+	margin:0px;
+	width:20%;
+	height:auto;
+	max-height:250px;
+	overflow:hidden;	
+	opacity:.7;
+	transition:opacity .5s ease-out;	
+	}
+#small-image-box .small-image a{
+	padding:0px;
+	margin:0px;
+	width:100%;
+	}	
+#small-image-box .small-image img{
+		width:100%;
+		height:auto;
+		border:none;
+		}	
+#small-image-box .small-image:hover{
+	opacity:1;
+	}
+	
+#small-image-box .mix{
+	display:none;
+	}
+
+.highslide-caption a{
+	color:#000;
+	font-weight:bold;
+	}
+.highslide-caption a:hover{
+	text-decoration:underline;
+	}	 		
+	
+/*-------------------Services----------------------*/
+#services{
+	width:90%;
+	margin:30px auto;
+	background:url(../images/service_studio.png) top right no-repeat;
+	}
+.service-intro{
+	width:40%;
+	min-width:300px;	
+	}
+.service-intro h1,.service-intro p {
+	color:#000;
+	}		
+
+/*-------------------Album Page----------------------*/	
+#album_page_header{
+	
+	width:100%;
+	height:60px;
+	border-bottom:4px solid #C00;
+	background:#000;
+	clear:both;
+	}
+#album_page_mini_logo{
+	display:inline-block;
+	text-indent:-9999px;
+	float:left;
+	height:90px;
+	width:90px;
+	background: #FFF url(../images/fv_mini_logo.png) no-repeat center center;
+	background-size:cover;
+	color:#804000;
+	margin:10px 0px 0px 40px;
+	text-align:center;
+	line-height:90px;
+	font-weight:bold;
+	border-collapse:collapse;
+	border:4px solid #C00;
+	border-radius:50px;
+	overflow:hidden;
+	}	
+#album_page_nav{
+	display:inline-block;
+	float:right;
+	height:50px;
+	line-height:50px;
+	margin:5px 30px 5px 0px;
+	}
+#album_page_nav span, #album_page_nav span a{
+	outline:none;
+	color:#FFF;
+	text-decoration:none;	
+	transition:.5s ease-out color;
+	}
+#album_page_nav a:hover, #album_page_nav a:focus{
+	outline:none;
+	color:#FC0;	
+	}
+#album_page_nav span i{
+	transition:.4s ease-out margin-right;
+	}	
+#album_page_nav span:hover i{
+	margin-right:10px;
+	}
+	
+#album_page_content{
+	clear:both;
+	display:block;
+	width:90%;
+	margin:60px auto;
+	max-width:1200px;
+	}
+#album_page_content p{
+	margin:8px 0px  0px 0px;
+	
+	}
+#album_page_images{
+	display:block;
+	margin:10px auto;	
+	width:100%;
+	
+	}
+	
+#album_page_images .album_page-small-image{
+	width:25%;
+	display:inline-block;
+	float:left;
+	}
+.album_page-small-image a{
+	display:inline-block;
+	padding:0px;
+	margin:0px;
+	opacity:.7;	
+	}
+.album_page-small-image a:hover{
+	opacity:1;
+	}	
+.album_page-small-image a img{
+	width:100%;
+	max-height:250px;
+	height:auto;
+	border:none;
+	}
+/*===================Second Album =============================*/
+
+#second_album_page_images{
+	display:block;
+	margin:20px auto;	
+	width:100%;
+	max-width:1200px;	
+	padding:20px 0px;	
+	}
+#second_album_page_images .album2_image_wrapper{
+	width:90%;
+	padding:6px;
+	background:#CCC;
+	margin:8px auto;
+	}
+.album2_image_wrapper img{
+	width:100%;
+	height:auto;
+	}	
+	
+/*================= Wedding packages =========================*/
+
+#wedding-packages{
+	width:100%;
+	padding:20px 0px;
+	margin:0px auto;	
+	}
+.package-item{
+	padding:5px;
+	width:100%;
+	max-width:450px;
+	min-width:345px;
+	background:#F3F3F3;
+	float:left;	
+	margin:5px;
+	border:1px solid #CCC;
+	}
+.package-item-image{
+	width:100%;
+	
+	}
+
+.package-item-image img{
+	width:100%;
+	height:auto;
+	}
+
+.package-item h2{
+	text-align:center;
+	background:#FC0;
+	color:#000;
+	text-align:center;
+	padding:10px 0px;
+	font-weight:bold;
+	}
+	
+.package-item ul{
+	margin-left:30px;
+	}	
+.package-item ul li{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:13px;
+	font-weight:200;
+	list-style-type:disc;	
+	padding:4px 0px;
+	}		
+		
+.package-left-side{
+	margin:16px;	
+	}
+				
+.package-right-side{
+	margin:16px;
+	
+	}
+
+.package-item-price{
+	width:100%;
+	text-align:center;
+	background:#CCC;	
+	}
+.package-item-price h3{
+	color:#FFF;
+	}		
+.price-two-day{
+	width:50%;
+	padding:5px 0px;
+	float:left;
+	background:#C00;
+	}
+.price-one-day{
+	width:50%;
+	padding:5px 0px;
+	float:left;
+	background:#39F;
+	}
+	
+/*================= FOOTER ===================================*/
+#footer{
+	position:relative;
+	display:block;
+	width:100%;
+	height:60px;
+	background:#CCC;
+	color:#FFF;
+	clear:both;
+	font-size:10px;
+	z-index:9999;
+	}
+															
+.powered-by{
+	display:block;
+	float:right;
+	background:url(../images/powered_by.png) no-repeat bottom left;
+	height:42px;
+	padding:5px 0px;
+	width:120px;
+	margin:5px 0px;
+	color:#999;
+	text-decoration:none;
+	
+	
+	}
+#social-media-wrapper{
+	display:inline-block;
+	float:left;		
+	}
+#social-media-wrapper ul{
+	display:inline;
+	}
+#social-media-wrapper ul li{
+	display:inline-block;
+	padding:15px 5px;
+	margin:0px 2px;
+	float:left;
+	text-align:center;
+	}
+#social-media-wrapper ul li a{
+	font-size:30px;
+	color:#999;
+	text-align:center;
+	font-weight:100;
+	}
+#social-media-wrapper ul li a:hover{
+	color:#333;
+	}	
+	
+#footer-menu-bar{
+	display:block;
+	height:100%;	
+	text-align:center;	
+	}
+#footer-menu-bar ul{
+	display:inline-block;
+	height:inherit;
+	margin:0px auto;
+	}
+#footer-menu-bar ul li{
+	display:block;
+	padding:0px 5px;
+	margin:0px 10px;
+	height:inherit;
+	float:left;
+	
+	}
+#footer-menu-bar ul li a{
+	color:#666;
+	font-size:13px;
+	font-weight:200;
+	height:inherit;
+	line-height:60px;	
+	}
+#footer-menu-bar ul li a:hover{
+	color:#FFF;
+	
+	}											
+
+/*================== Media Queries ============================*/
+
+@media screen and (max-width: 1352px) {
+	#left-col{	
+	width:20%;
+	
+	}
+#right-col{	
+	width:80%;	
+	}
+	#small-image-box .small-image{
+		max-height:120px;
+		}	
+	
+	}
+	
+	
+@media screen and (max-width: 952px) {
+	#left-col{	
+	width:25%;
+	
+	}
+#right-col{	
+	width:75%;
+	
+	}
+#small-image-box .small-image{
+		width:33.33%
+		}
+#social-media-wrapper ul li a{
+	font-size:25px;
+	}			
+	
+	}
+	
+@media screen and (max-width: 732px) {
+	
+	#left-col{	
+	width:100%;
+	min-width:350px;
+	position:relative;
+	z-index:1;
+	height:180px;
+	overflow:hidden;
+		
+	}
+	
+#menu-bar{
+	display:block;
+	margin:5px auto;	
+	width:100%;
+	}
+#menu-bar>ul{
+	display:block;
+	width:96%;
+	margin:0px auto;
+	text-align:center;
+	}
+#menu-bar>ul>li{
+	display:inline-block;
+	text-align:center;
+	margin:0px 2px;
+	}
+#menu-bar>ul>li>a{
+	padding:3px;
+	margin:0px;
+	display:inline-block;
+	text-align:center;	
+	}	
+		
+#logo{	
+	margin:20px auto;
+	}
+		
+#right-col{	
+	width:100%;
+	min-width:350px;
+	position:relative;
+	z-index:2;
+	top:15px;
+	
+	}
+	
+#gallery-menu{
+	font-size:10px;
+	padding:7x 0px;
+	}
+#gallery-menu ul li{
+	margin-right:2px;
+	}
+	
+#gallery-menu ul li button{
+	padding:5px;	
+	}			
+	
+#album_page_images .album_page-small-image{
+	width:33.33%;
+	display:inline-block;
+	float:left;
+	}	
+	
+	
+	}	
+
+
+
+
+
+
+
