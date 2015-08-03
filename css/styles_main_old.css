@@ -423,6 +423,8 @@ p{	font-size: 13px;
 	min-width:300px;
 	}
 #contact-map{
+	width:95%;
+	height:400px;
 	display:block;
 	margin:20px 0px;
 	border:1px solid #CCC;
