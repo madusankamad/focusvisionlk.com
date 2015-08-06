@@ -10,7 +10,6 @@ body,html{
 	color:#666;
 	height:100%;
 	width:100%;
-
 	}
 /*---------------fonts--------------*/
 h1{font-size: 35px;
@@ -111,6 +110,8 @@ p{	font-size: 13px;
 	display:block;
 	height:auto;
 	overflow:hidden;
+	min-height:190px;
+	background:url(../images/slider_loader.gif) center no-repeat;
 	}
 
 #main-slider .bx-controls{
