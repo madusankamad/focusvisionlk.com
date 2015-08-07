@@ -21,9 +21,6 @@ $dir = 'uploads/';
 $count = 0;
 $albumId=$_POST['albumId'];
 
-
-
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_FILES['files']))
 {
   // loop all files
