@@ -109,8 +109,8 @@ p{	font-size: 13px;
 #main-slider{
 	display:block;
 	height:auto;
-	overflow:hidden;
 	min-height:192px;
+	overflow:hidden;	
 	background:url(../images/slider_loader.gif) center no-repeat;
 	}
 
