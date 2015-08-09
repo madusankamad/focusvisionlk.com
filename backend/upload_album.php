@@ -3,13 +3,13 @@
 include("includes/dbconn.php");
 //-----------------------------------
 // prepare sql and bind parameters
-    $stmt = $conn->prepare("INSERT INTO images (image_id, image_name, image_path, image_category, image_album_id)
-    VALUES (:image_id, :image_name, :image_path, :image_category, :image_album_id)");
-    $stmt->bindParam(':image_id', $image_id);
-    $stmt->bindParam(':image_name', $image_name);
-    $stmt->bindParam(':image_path', $image_path);
-	$stmt->bindParam(':image_category', $image_category);
-	$stmt->bindParam(':image_album_id', $image_album_id);
+    $stmt = $conn->prepare("INSERT INTO album (album_id, album_name, album_image, album_cat_name)
+    VALUES (:album_id, :album_name, :album_image, :album_cat_name)");
+    $stmt->bindParam(':album_id', $album_id);
+    $stmt->bindParam(':album_name', $album_name);
+    $stmt->bindParam(':album_image', $album_image);
+	$stmt->bindParam(':album_cat_name', $album_cat_name);
+	
 //-----------------------------------
 
 ?>
@@ -19,7 +19,8 @@ $max_size = 1024*5000;
 $extensions = array('jpeg', 'jpg', 'png');
 $dir = 'uploads/';
 $count = 0;
-$albumId=$_POST['albumId'];
+$albumName=$_POST['albumName'];
+$catName=$_POST['catName'];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_FILES['files']))
 {
@@ -39,14 +40,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_FILES['files']))
 	    continue;
 
     // now we can move uploaded files
-		$filename=time(). $name;
+		$filename=time()."_".$name;
       if( move_uploaded_file($_FILES["files"]["tmp_name"][$i], $dir .$filename) ){		  	
 		  // insert a row to db
-    		$image_id = NULL;
-			$image_name = $filename;
-			$image_path = $dir .$filename;
-			$image_category = NULL;
-			$image_album_id = $albumId;
+    		$album_id = NULL;
+			$album_name = $albumName;
+			$album_image = $dir .$filename;
+			$album_cat_name = $catName;			
 			$stmt->execute();	  
 		 //---------------------
 			$count++;
