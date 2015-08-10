@@ -2,7 +2,7 @@
 <?php 
 include("includes/dbconn.php");
 
-	$stmt = $conn->prepare("SELECT album_id, album_name FROM album");
+	$stmt = $conn->prepare("SELECT cat_name FROM img_category");
     $stmt->execute();
 ?>
 
@@ -25,22 +25,24 @@ include("includes/dbconn.php");
   <div class="status"></div>
   
   <!-- multiple file upload form -->
-  <form action="upload_image.php" method="post" enctype="multipart/form-data" class="pure-form">
-  	  
-    <label>Select Album Name</label>
-    	<select name="albumId" id="albumId">      
+  <h1> Create Album</h1>
+  <form action="upload_album.php" method="post" enctype="multipart/form-data" class="pure-form">
+  	
+    <label>Album Name</label> : <input type="text" name="albumName" placeholder="album_name"/><br><br>
+    <label>Album Name Category</label>
+    	<select name="catName" >      
     	<?php  
 		// set the resulting array to associative
     	$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 		foreach($stmt->fetchAll() as $k=>$v){
-			echo("<option value='".$v['album_id']."'>{$v['album_name']}</option>");			
+			echo("<option value='".$v['cat_name']."'>{$v['cat_name']}</option>");			
 			}
 			$conn = null;
 		?>
     </select>
-    <br> <br> 
-    <input type="file" name="files[]" multiple id="files">
-    <input type="submit" value="Upload" class="pure-button pure-button-primary">
+    <br><br>
+    <input type="file" name="files[]" id="files"><br><br>
+    <input type="submit" value="Create Album" class="pure-button pure-button-primary">
   </form>
   
   <!-- progress bar -->

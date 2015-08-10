@@ -109,6 +109,7 @@ p{	font-size: 13px;
 #main-slider{
 	display:block;
 	height:auto;
+	max-height:100%;
 	min-height:192px;
 	overflow:hidden;	
 	background:url(../images/slider_loader.gif) center no-repeat;
@@ -618,7 +619,7 @@ p{	font-size: 13px;
 	
 	#left-col{	
 	width:100%;
-	min-width:350px;
+	min-width:300px;
 	position:relative;
 	z-index:1;
 	height:180px;
@@ -681,7 +682,23 @@ p{	font-size: 13px;
 	}	
 	
 	
-	}	
+	}
+
+@media screen and (max-width: 360px) {
+	
+	#menu-bar>ul>li>a{
+	font-size:9px;
+	font-weight:200;
+	}
+	#gallery-menu ul li button{
+	padding:3px;
+	font-size:8px;	
+	}
+	#small-image-box .small-image{
+		width:50%
+		}
+	
+	}		
 
 
 
