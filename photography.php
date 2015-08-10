@@ -109,7 +109,7 @@ $(function(){
 					// set the resulting array to associative
 					$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 					foreach($stmt->fetchAll() as $k=>$v){						
-						echo("<div class='small-image mix ".$v['album_cat_name']."' ><a href='".$v['album_image']."' class='highslide' onclick='return hs.expand(this)'><img src='".$v['album_image']."' alt='Highslide JS'title='Click to enlarge' /></a><div class='highslide-caption'><a href='view_album.php?id=".$v['album_id']."'> View Full Album</a></div> </div>");			
+					echo("<div class='small-image mix ".$v['album_cat_name']."' ><a href='".$v['album_image']."' class='highslide' onclick='return hs.expand(this)'><img src='resize.php?h=250&amp w=400&amp img=".$v['album_image']."' alt='Highslide JS'title='Click to enlarge' /></a><div class='highslide-caption'><a href='view_album.php?id=".$v['album_id']."'> View Full Album</a></div> </div>");			
 						}
 					?>
             	
