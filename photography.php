@@ -1,10 +1,5 @@
 <!doctype html>
-<html>
-<?php 
-include("includes/dbconn.php");
-
-?>
-<!-- InstanceBegin template="/Templates/FVTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<html><!-- InstanceBegin template="/Templates/FVTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 
@@ -15,6 +10,10 @@ include("includes/dbconn.php");
 <link rel="stylesheet" type="text/css" href="css/styles_main_old.css"/>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <!-- InstanceBeginEditable name="head" -->
+<?php 
+include("includes/dbconn.php");
+?>
+
 <script type="text/javascript" src="highslide/highslide-with-gallery.js"></script>
 <script src="js/jquery.mixitup.min.js"></script>
 <link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
@@ -63,29 +62,13 @@ $(function(){
         
         <div id="menu-bar">
         	<ul>
-            	<li><a href="home.html" class="active">Home</a></li>
+            	<li><a href="home.php" class="active">Home</a></li>
                 <li><a href="services.html">Our Services</a></li>
-                <li><a href="photography.html" >Photography</a></li>
+                <li><a href="photography.php" >Photography</a></li>
                 <li><a href="packages.html">Packages</a></li>
                 <li><a href="contact.html">Contact</a></li>            
             </ul>
         </div>
-        
-       
-        	<!--
-            <div id="social-media-wrapper">
-            <ul>
-            <li> <a  href="#"><i class="fa fa-facebook"></i></a></li>
-              <li> <a  href="#"><i class="fa fa-google-plus"></i></a></li>
-                <li> <a  href="#"><i class="fa fa-youtube"></i></a></li>
-                <li> <a  href="#"><i class="fa fa-vimeo-square"></i></a></li>
-            </ul>
-            </div> -->
-            
-          
-     
-        
-    
     </div>
     <div id="right-col">
     	<div id="page-content-area">

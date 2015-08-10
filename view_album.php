@@ -33,7 +33,7 @@ $albumID=$_GET['id'];
     	 <div id="album_page_header">
          	<div id="album_page_mini_logo">Mini Logo</div>
             <div id="album_page_nav">
-            	<span><i class="fa fa-chevron-left"></i> <a href="photography.html">Back to Gallery</a></span>
+            	<span><i class="fa fa-chevron-left"></i> <a href="photography.php">Back to Gallery</a></span>
             </div>
             
          </div>
