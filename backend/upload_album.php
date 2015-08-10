@@ -17,7 +17,7 @@ include("includes/dbconn.php");
 <?php 
 $max_size = 1024*5000;
 $extensions = array('jpeg', 'jpg', 'png');
-$dir = 'uploads/';
+$dir = 'images/album/';
 $count = 0;
 $albumName=$_POST['albumName'];
 $catName=$_POST['catName'];
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_FILES['files']))
 
     // now we can move uploaded files
 		$filename=time()."_".$name;
-      if( move_uploaded_file($_FILES["files"]["tmp_name"][$i], $dir .$filename) ){		  	
+      if( move_uploaded_file($_FILES["files"]["tmp_name"][$i], "../".$dir .$filename) ){		  	
 		  // insert a row to db
     		$album_id = NULL;
 			$album_name = $albumName;
